@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkprojeto_usuario"]=self["webpackChunkprojeto_usuario"]||[]).push([[443],{517:function(u,t,r){r.r(t),r.d(t,{default:function(){return l}});var n=function(){var u=this;u._self._c;return u._m(0)},s=[function(){var u=this,t=u._self._c;return t("div",{staticClass:"about"},[t("h1",[u._v("Projeto Usuário")])])}],e=r(1001),o={},i=(0,e.Z)(o,n,s,!1,null,null,null),l=i.exports}}]);
+//# sourceMappingURL=about.2f466f33.js.map
