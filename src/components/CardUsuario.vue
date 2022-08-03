@@ -8,7 +8,7 @@
       </v-list-item-content>
     </v-list-item>
 
-    <v-card-actions>
+    <v-card-actions> 
       <v-btn outlined rounded text @click="showContact"> Contact </v-btn>
       <v-btn outlined rounded text @click="showInfo(index)"> Info </v-btn>
     </v-card-actions>
