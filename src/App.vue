@@ -28,7 +28,7 @@
       <v-spacer></v-spacer>
       
       <v-btn
-        href="/about"
+        to="/about"
         target="_blank"
         text
       >
