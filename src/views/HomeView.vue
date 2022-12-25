@@ -9,41 +9,79 @@
         >
           <v-card class="mx-auto mw-75" outlined v-show="showCardInfo">
             <v-list-item three-line>
-              <v-list-item-content>
-                <v-row no-gutters class="justify-space-between">
-                  <div class="text-overline mb-4">{{ username }}</div>
-                </v-row>
-
-                <v-list-item-title class="text-h5 mb-1">
+              <v-list-item-avatar tile size="120" color="transparent">
+                <img src="@/assets/ICON.png" alt="" />
+              </v-list-item-avatar>
+              <v-list-item-content class="ml-5 mt-5 aling-self:start">
+                <v-list-item-subtitle class="d-flex justify-space-between">
+                  <div class="text-overline">{{ username }}</div>
+                </v-list-item-subtitle>
+                <v-list-item-title class="text-h5 pb-5">
                   {{ name }}
                 </v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-content class="ml-5 mt-5">
                 <v-list-item-subtitle class="d-flex justify-space-between">
-                  <span><i>Telefone:</i> {{ phone }}</span>
-                  <span><i>Website:</i> {{ website }}</span>
-                  <span><i>email:</i> {{ email }}</span>
+                  <v-col no-gutters>
+                    <v-row>
+                      <p><i>Telefone:</i> {{ phone }}</p>
+                    </v-row>
+                    <v-row>
+                      <p>
+                        <i>Website:</i>
+                        <a v-bind:href="website">{{ website }}</a>
+                      </p>
+                    </v-row>
+                    <v-row>
+                      <p><i>email:</i> {{ email }}</p>
+                    </v-row>
+                  </v-col>
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
             <v-card-text>
-              <div class="text--primary">
-                <strong>Endereço</strong>
-                <v-list-item-subtitle class="d-flex justify-space-between">
-                  <span><i>Rua:</i> {{ street }}</span>
-                  <span><i>Complemento:</i> {{ suite }}</span>
-                  <span><i>Cidade:</i> {{ city }}</span>
-                  <span><i>Código Postal:</i> {{ zipcode }}</span>
-                </v-list-item-subtitle>
-              </div>
-              <div class="text--primary">
-                <strong>Companhia</strong>
-                <v-list-item-subtitle class="d-flex justify-space-between">
-                  <span><i>Nome</i> {{ companyname }}</span>
-                  <span><i> {{ companyphrase }}</i>
-                  </span>
-                  <span><i>{{ bs }}</i>
-                  </span>
-                </v-list-item-subtitle>
-              </div>
+              <v-row>
+                <v-col class="ml-5">
+                  <div class="text--primary">
+                    <strong>Endereço</strong>
+                    <v-col>
+                      <v-row>
+                        <span><i>Rua:</i> {{ street }}</span>
+                      </v-row>
+                      <v-row>
+                        <span><i>Complemento:</i> {{ suite }}</span>
+                      </v-row>
+                      <v-row>
+                        <span><i>Cidade:</i> {{ city }}</span>
+                      </v-row>
+                      <v-row>
+                        <span><i>Código Postal:</i> {{ zipcode }}</span>
+                      </v-row>
+                    </v-col>
+                  </div>
+                </v-col>
+                <v-col>
+                  <div class="text--primary">
+                    <strong>Companhia</strong>
+                    <v-col>
+                      <v-row>
+                        <span>{{ companyname }}</span>
+                      </v-row>
+                      <v-row>
+                        <span
+                          ><i> {{ companyphrase }}</i></span
+                        >
+                      </v-row>
+                      <v-row>
+                        <span
+                          ><i>{{ bs }}</i></span
+                        >
+                      </v-row>
+                    </v-col>
+                  </div>
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-overlay>
